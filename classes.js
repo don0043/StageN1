@@ -1,7 +1,7 @@
 class Animal {
-constructor(move) {
-    this.move = move;
-}
+    constructor(move) {
+        this.move = move;
+    }
 }
 
 
