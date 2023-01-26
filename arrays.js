@@ -1,27 +1,27 @@
-arr = ["spider man", "iron man", "super man"]
+let arr = ["spider man", "iron man", "super man"]
 
 for (i = 0; i < arr.length; i++){
     console.log(arr[i])
 }
 //array to string and back to array
 
-syms = ["s","u","p","e","r"]
+let syms = ["s","u","p","e","r"]
 
-joined = syms.join("") //joining every symbol to string
+let joined = syms.join("") //joining every symbol to string
 
 console.log(joined)
 
 
-splitted = joined.split("") //splitting it into array
+let splitted = joined.split("") //splitting it into array
 
 
 console.log(splitted)
 
 // hello to names
 
-names = ["Daniiar", "Sasha","Petya","Kolya"]
+let names = ["Daniiar", "Sasha","Petya","Kolya"]
 
-helloNames = names.map((i) => {
+let helloNames = names.map((i) => {
     return "hello" + " " + i
 })
 
@@ -31,9 +31,9 @@ console.log(helloNames)
 //numeric to boolean
 
 
-numArr = [1, -1, 0, 3, 5]
+let numArr = [1, -1, 0, 3, 5]
 
-boolArr = numArr.map((e) => {
+let boolArr = numArr.map((e) => {
     return Boolean(e)
 })
 
@@ -43,7 +43,7 @@ console.log(boolArr)
 
 // sort array
 
-sArr = [1,6,7,8,3,4,5,6]
+let sArr = [1,6,7,8,3,4,5,6]
 
 
 console.log(sArr.sort().reverse())
@@ -53,24 +53,30 @@ console.log(sArr.sort().reverse())
 
 
 let n = sArr.filter((e) => {
-    return e === 3
+    if (e >= 3){
+        return e
+    }
 })
-
+console.log("Task 6")
 console.log(n)
 
 // Write a function that takes two parameters - an array and a number and outputs the index of an array element equal to a number
 
 let func = (a, b) => {
-    console.log(a[b])
+    console.log(a.indexOf(b))
 }
 
 
-newArr = [1,3,4,5,67,8]
+let newArr = [1,2,3,4,10, 11, 12];
 
-func(newArr, 2)
+
+console.log("Task 7")
+func(newArr, 10)
 
 
 // Implement a loop that will print the number 'a' until it is less than 10
+
+console.log("Task 8")
 
 for (let i = 0; i < 10; i++){
     console.log(i)
