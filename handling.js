@@ -7,10 +7,13 @@ try {
 }
 
 
+// in Js dividing by zero is not error its "infinity"
 
+let num
 
-b = 2 / 0
-
-if (b == "Infinity"){
+try {
+    num = 1/0
     console.log("cannot be divided by zero")
+}catch (e){
+    console.log(e)
 }
